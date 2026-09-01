@@ -77,11 +77,13 @@
       <h2>Short version</h2>
       <p>
         Coffee Saver is a skip counter for paying off a home coffee machine on paper.
-        Builds with ads (including v1.0.2) show a <strong>bottom banner ad</strong> via
-        <strong>Google AdMob</strong>. Your habit data (machine price, skips, settings) stays
-        <strong>on your device</strong>. There is no Dirty Tesla login and no Dirty Tesla server
-        for habit data. Optional tips open Cash App and/or X Money in a browser; tips do not
-        remove ads.
+        Ads-enabled builds (including v1.0.3) show a <strong>bottom banner ad</strong> via
+        <strong>Google AdMob</strong>. Ad requests are configured for
+        <strong>non-personalized ads only</strong> (NPA / <code>npa=1</code>). There is
+        <strong>no UMP personalized-ads consent flow</strong> in this version. Your habit data
+        (machine price, skips, settings) stays <strong>on your device</strong>. There is no
+        Dirty Tesla login and no Dirty Tesla server for habit data. Optional tips open
+        Cash App and/or X Money in a browser; tips do not remove ads or unlock features.
       </p>
     </section>
 
@@ -108,13 +110,18 @@
     <section>
       <h2>Advertising</h2>
       <p>
-        Ads-enabled versions of Coffee Saver (including v1.0.2) display a
+        Ads-enabled versions of Coffee Saver (including v1.0.3) display a
         <strong>bottom banner advertisement</strong> served by <strong>Google AdMob</strong>
         (Google LLC).
       </p>
       <ul>
         <li>
-          The app may use an <strong>advertising ID</strong> (Android Advertising ID /
+          Ad requests are set to <strong>non-personalized ads only</strong>
+          (AdMob extras <code>npa=1</code>). We are not running Google’s UMP form to request
+          personalized ads in this version.
+        </li>
+        <li>
+          The app may still use an <strong>advertising ID</strong> (Android Advertising ID /
           Google Play services advertising identifiers) so AdMob can serve and measure ads.
         </li>
         <li>
@@ -133,11 +140,13 @@
     </section>
 
     <section>
-      <h2>Optional tips (“Buy me a coffee”)</h2>
+      <h2>Optional tips (Tip jar)</h2>
       <p>
-        Optional tip actions may open <strong>Cash App</strong> and/or <strong>X Money</strong>
-        in your device browser so you can tip if you want. Tips are optional. Tipping does
-        <strong>not</strong> remove ads and is not an in-app purchase inside Coffee Saver.
+        Settings may show a <strong>Tip jar</strong> (Support Dirty Tesla) with buttons for
+        <strong>Cash App</strong> and <strong>X Money</strong>. Those open in your device’s
+        system browser — not an in-app checkout WebView. Helper text in the app:
+        “Optional tip. Does not remove ads or unlock features.” Tips are optional and are
+        <strong>not</strong> an in-app purchase inside Coffee Saver.
       </p>
     </section>
 
@@ -147,7 +156,8 @@
         <li>No Dirty Tesla login, email signup, or social accounts for habit data</li>
         <li>No location permission</li>
         <li>No first-party analytics SDK, crash reporter, or cloud sync of habit data to Dirty Tesla</li>
-        <li>No claim that tips remove ads</li>
+        <li>No claim that tips remove ads or unlock features</li>
+        <li>No UMP personalized-ads consent flow in this version (ads are NPA-only)</li>
       </ul>
     </section>
 
@@ -176,9 +186,9 @@
     <section>
       <h2>Changes to this policy</h2>
       <p>
-        If accounts, cloud sync, or other features that change how data is handled are added
-        later, this privacy policy will be updated before those builds ship, and the Play Data
-        safety form will match.
+        If accounts, cloud sync, personalized ads (UMP), or other features that change how data
+        is handled are added later, this privacy policy will be updated before those builds ship,
+        and the Play Data safety form will match.
       </p>
     </section>
 
