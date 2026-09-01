@@ -87,16 +87,17 @@
 
     <section>
       <h2>What data is stored</h2>
-      <p>The app stores data <strong>only on your device</strong>, including things like:</p>
+      <p>The app stores habit data <strong>only on your device</strong>, including things like:</p>
       <ul>
         <li>Machine name and price</li>
-        <li>Cost per home coffee</li>
+        <li>Cost per café coffee</li>
         <li>Skip / café history</li>
-        <li>App settings</li>
+        <li>App settings (theme, haptics, sound)</li>
       </ul>
       <p>
         There is <strong>no login</strong>. Habit data is <strong>not sent to a Dirty Tesla server</strong>.
         Dirty Tesla does not operate a cloud backend for your Coffee Saver habit data.
+        Habit data stays on device except optional Google / Android backup if you have device backup turned on.
       </p>
     </section>
 
@@ -104,16 +105,14 @@
       <h2>Ads, purchases, and permissions</h2>
       <ul>
         <li><strong>Version 1.0</strong> shows <strong>no ads</strong> and has <strong>no in-app purchases</strong>.</li>
+        <li>The release does <strong>not</strong> request the advertising ID permission (<code>AD_ID</code>).</li>
+        <li>The release does <strong>not</strong> declare the <code>INTERNET</code> permission.</li>
         <li>The app does <strong>not</strong> use location permission.</li>
-        <li>
-          The app may include internet permission because of a WebView. In practice,
-          content such as Google Fonts may load from Google’s servers. That means Google
-          may see your device’s IP address when those resources are fetched.
-        </li>
+        <li>Fonts are bundled with the app (no third-party font CDN).</li>
       </ul>
       <p>
-        This policy does not claim advertising IDs are unused forever — it only states
-        that ads are not shown in v1.0. If ads are added later, this page will be updated.
+        If ads, network features, accounts, or cloud sync are added later, this policy will be updated
+        before those builds ship.
       </p>
     </section>
 
