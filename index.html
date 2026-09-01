@@ -38,10 +38,7 @@
       font-size: 1.65rem;
       color: var(--accent);
     }
-    .meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+    .meta { color: var(--muted); font-size: 0.95rem; }
     section {
       background: var(--card);
       border: 1px solid var(--border);
@@ -77,74 +74,71 @@
     </header>
 
     <section>
-      <h2>What this app is</h2>
+      <h2>Short version</h2>
       <p>
-        Coffee Saver is a simple habit tracker. It helps you keep track of cafe skips
-        and how much your home coffee machine costs you "on paper" compared to buying
-        coffee out. That is it - local habit tracking, not a social network. An optional
-        home-screen widget can log a skip without opening the app; that still uses the
-        same on-device data.
+        Coffee Saver is a skip counter for paying off a home coffee machine on paper.
+        Version 1 for Google Play has <strong>no ads</strong>, <strong>no advertising ID permission</strong>,
+        <strong>no login</strong>, and keeps your habit data <strong>on your device</strong>.
       </p>
     </section>
 
     <section>
-      <h2>What data is stored</h2>
-      <p>The app stores habit data <strong>only on your device</strong>, including things like:</p>
+      <h2>What the app stores</h2>
+      <p>On your phone only (local storage / app preferences), Coffee Saver may keep:</p>
       <ul>
-        <li>Machine name and price</li>
-        <li>Cost per cafe coffee</li>
-        <li>Skip / cafe history</li>
-        <li>App settings (theme, haptics, sound)</li>
+        <li>Machine name and purchase price you enter</li>
+        <li>Typical coffee cost and currency</li>
+        <li>Skip history (amounts, times, quick vs exact)</li>
+        <li>Settings such as theme, haptics, and sound</li>
       </ul>
       <p>
-        There is <strong>no login</strong>. Habit data is <strong>not sent to a Dirty Tesla server</strong>.
-        Dirty Tesla does not operate a cloud backend for your Coffee Saver habit data.
+        That data is used only to run the tracker and the optional home-screen widget.
+        There is no Dirty Tesla account and no Dirty Tesla server that receives your skips.
+      </p>
+      <p>
+        You can wipe first-party data in the app with <strong>Settings → Start over</strong>,
+        or by uninstalling the app. <strong>Export JSON</strong> (if you use it) creates a file
+        on your device; it is not uploaded by us.
       </p>
     </section>
 
     <section>
-      <h2>Ads, purchases, network, and permissions</h2>
+      <h2>What we do not do (this build)</h2>
       <ul>
-        <li><strong>Version 1.0</strong> shows <strong>no ads</strong> and has <strong>no in-app purchases</strong>.</li>
-        <li>The release does <strong>not</strong> request the advertising ID permission (<code>AD_ID</code>).</li>
-        <li>The release does <strong>not</strong> declare the <code>INTERNET</code> permission. <strong>No network is required</strong> for the app to run.</li>
-        <li>Fonts (Figtree and Fraunces) are bundled with the app. There is no Google Fonts CDN call and no Dirty Tesla server fetch for UI assets.</li>
-        <li>The app does <strong>not</strong> use location permission.</li>
-        <li>Vibration may be used for optional haptics.</li>
+        <li>No ads in version 1 (AdMob SDK and advertising ID permission are not in the release)</li>
+        <li>No in-app purchases</li>
+        <li>No login, email signup, or social accounts</li>
+        <li>No location permission</li>
+        <li>No first-party analytics SDK, crash reporter, or cloud sync</li>
       </ul>
-      <p>
-        If ads, network features, accounts, or cloud sync are added later, this policy will be updated
-        before those builds ship.
-      </p>
     </section>
 
     <section>
-      <h2>Backups and clearing data</h2>
+      <h2>Network access</h2>
       <p>
-        If you have Android / Google backup turned on, device backup may sync app data
-        through Google's backup service. That is controlled by your device and Google account
-        settings, not by a Dirty Tesla server.
+        The Coffee Saver release app <strong>does not require network access for normal use</strong>.
+        Fonts (Figtree / Fraunces) are self-hosted inside the app. Google Fonts CDNs are not used.
+        The Android package does not declare the <code>INTERNET</code> permission in the release merge.
+        Habit data is not sent to Dirty Tesla servers (there are none for this app).
       </p>
       <p>
-        You can clear local data with the app's <strong>Start over</strong> option in Settings,
-        or by uninstalling the app.
+        Android may back up app data to your Google account if device backup is on.
+        That is Google’s backup system, not a Dirty Tesla upload.
       </p>
     </section>
 
     <section>
       <h2>Children</h2>
       <p>
-        Coffee Saver is not directed at children. It is a general consumer habit tool
-        and is not intended for kids.
+        Coffee Saver is not directed at children and is not part of Designed for Families.
       </p>
     </section>
 
     <section>
       <h2>Changes to this policy</h2>
       <p>
-        If the app later adds ads, accounts, cloud sync, or other features that change
-        how data is handled, this privacy policy will be updated and the "Last updated"
-        date will change.
+        If ads, accounts, cloud sync, or other features that change how data is handled are added later,
+        this privacy policy will be updated before those builds ship, and the Play Data safety form will match.
       </p>
     </section>
 
@@ -158,7 +152,7 @@
     </section>
 
     <footer>
-      Coffee Saver - Dirty Tesla - Privacy policy hosted on GitHub Pages
+      Coffee Saver — Dirty Tesla — Privacy policy hosted on GitHub Pages
     </footer>
   </div>
 </body>
